@@ -1,0 +1,23 @@
+.footer {
+	padding: 24px 0;
+	font-size: 32px;
+	margin-top: 88px;
+	background-color: #000;
+    color: #fff;
+
+	@include mobile {
+		padding: 8px 0;
+		margin-top: 24px;
+	}
+}
+
+.footer__copyright {
+	p {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 180%;
+		text-transform: capitalize;
+		color: var(--neutral-graycbcbcb);
+	}
+}

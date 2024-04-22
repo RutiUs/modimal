@@ -1,0 +1,55 @@
+.button, a.button {
+    display: inline-block;
+    min-width: 185px;
+    height: 40px;
+    padding: 8px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-transform: capitalize;
+    text-align: center;
+    transition: all 0.5s;
+    background: var(--white);
+    color: var(--black);
+
+    &:hover {
+        background-color: var(--neutral-grayededed);
+    }
+
+    @include mobile {
+        min-width: unset;
+        padding: 8px 9px;
+    }
+
+    &--small {
+        min-width: unset;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &-outline {
+        display: inline-block;
+        height: 40px;
+        border: 1px solid var(--primary-primary-600);
+        padding: 8px 16px;
+
+        display: flex;
+        gap: 4px;
+        justify-content: center;
+        align-items: center;
+
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        text-transform: capitalize;
+        text-align: center;
+        transition: all 0.5s;
+        color: var(--primary-primary-600);
+
+        &:hover {
+            color: var(--primary-primary-700);
+        }
+    }
+}

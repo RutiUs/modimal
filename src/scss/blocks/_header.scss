@@ -1,0 +1,48 @@
+.header {
+	position: relative;
+	padding: 16px 0 18px;
+	z-index: 199;
+	background-color: #fff;
+
+	@include mobile {
+		padding: 4px 0 8px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav {
+		margin-left: auto;
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	&__logo {
+		flex-shrink: 0;
+	}
+
+	&__nav-btn {
+		display: none;
+	}
+
+	&__account {
+		&--first {
+			margin-left: auto;
+			margin-right: 24px;
+
+			@include tablet {
+				margin-right: 12px;
+			}
+
+			@include mobile {
+				order: -1;
+				margin-left: unset;
+			}
+		}
+	}
+}
